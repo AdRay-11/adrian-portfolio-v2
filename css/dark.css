@@ -1,0 +1,70 @@
+/* Hero pieces used by both themes */
+.pill{display:inline-flex;align-items:center;gap:8px;border:1.5px solid currentColor;border-radius:999px;padding:5px 14px;font:600 .8rem 'Plus Jakarta Sans',sans-serif;margin:0 0 18px}
+.pill i{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hero h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.8rem,7vw,4.8rem);letter-spacing:-.02em;line-height:1;margin:0 0 .15em}
+.tag-line{font:300 clamp(1.3rem,3vw,2rem)/1.25 'Plus Jakarta Sans',sans-serif;margin:.2em 0 .6em;opacity:.7}
+.feat{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.88rem}
+.feat li{display:flex;align-items:center;gap:8px;margin:0;opacity:.85}
+.codewrap{position:relative;padding:26px 14px 34px 14px}
+.code{border:1.5px solid var(--cb,#16181d);border-radius:16px;background:var(--cbg,#fff);color:var(--ct,#16181d);overflow:hidden}
+.cbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1.5px solid var(--cb,#16181d)}
+.dots{display:flex;gap:7px}.dots i{width:11px;height:11px;border-radius:50%;background:#22c55e}.dots i:nth-child(2){background:#f87171}.dots i:nth-child(3){background:#e5e5e5}
+.fn{margin-right:56px;font:400 .72rem 'Space Mono',monospace;opacity:.7}
+.code pre{margin:0;padding:18px 20px 24px;overflow-x:auto;font:400 .84rem/1.85 'Space Mono',ui-monospace,monospace;white-space:pre}
+.code code{font:inherit}.code b{font-weight:700}.code u{text-decoration:none;font-weight:700}
+.badge{position:absolute;background:var(--cbg,#fff);color:var(--ct,#16181d);border:1.5px solid var(--cb,#16181d);border-radius:12px;padding:10px 14px;text-align:center;font:400 .68rem 'Space Mono',monospace;line-height:1.3}
+.badge strong{display:block;font:800 1.3rem 'Plus Jakarta Sans',sans-serif}
+.b1{top:0;right:0}.b2{left:0;bottom:0}
+.me{display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top;margin:0 0 12px;border:2px solid var(--ink)}
+.tgl{background:transparent;color:var(--ink);border:2px solid var(--ink);border-radius:12px;width:40px;height:40px;display:grid;place-items:center;cursor:pointer;margin-left:auto}
+.tgl:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+.bar{flex-wrap:nowrap}.nav{margin-left:auto}
+@media(max-width:959px){.bar{flex-wrap:wrap}.tgl{position:absolute;right:16px;top:8px;width:34px;height:34px}header{position:sticky}.nav{margin-left:0}}
+@media(max-width:760px){.codewrap{padding:26px 0 34px}.b1{right:6px}.b2{left:6px}.code pre{font-size:.76rem}}
+.hero{align-items:center}
+
+/* Dark theme (default) */
+:root:not([data-theme=light]){color-scheme:dark;--bg:#0a0a0b;--ink:#ededed;--soft:#a1a1aa;--ac:#f4c542;--cb:#2c2c31;--cbg:#101012;--ct:#ededed}
+:root:not([data-theme=light]) body{background-color:#0a0a0b;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px}
+:root:not([data-theme=light]) header{background:rgba(10,10,11,.92);backdrop-filter:blur(8px);border-bottom:1px solid #26262b}
+:root:not([data-theme=light]) .brand{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.01em}
+:root:not([data-theme=light]) .nav a{color:#c9c9cf;border:1px solid transparent}
+:root:not([data-theme=light]) .nav a:hover{border-color:#3a3a40;color:#fff}
+:root:not([data-theme=light]) .nav a.on{background:#fff;color:#0a0a0b}
+:root:not([data-theme=light]) .tgl{border:1px solid #33333a;color:#e5e5e5}
+:root:not([data-theme=light]) .tgl:hover{background:#18181b}
+:root:not([data-theme=light]) .stack{background:#101012;color:#ededed;border:1px solid #2c2c31;box-shadow:0 -8px 0 rgba(255,255,255,.025)}
+:root:not([data-theme=light]) .c-home,:root:not([data-theme=light]) .c-about,:root:not([data-theme=light]) .c-projects,:root:not([data-theme=light]) .c-gallery,:root:not([data-theme=light]) .c-cs{background:#101012}
+:root:not([data-theme=light]) .c-contact{background:#101012;border-color:#3a3a40}
+:root:not([data-theme=light]) .mono{color:#a1a1aa;opacity:1}
+:root:not([data-theme=light]) a{color:#fff}
+:root:not([data-theme=light]) .lede,:root:not([data-theme=light]) p,:root:not([data-theme=light]) li,:root:not([data-theme=light]) dd,:root:not([data-theme=light]) figcaption{color:#d4d4d8}
+:root:not([data-theme=light]) h1,:root:not([data-theme=light]) h2,:root:not([data-theme=light]) h3,:root:not([data-theme=light]) h4,:root:not([data-theme=light]) dt{color:#fff}
+:root:not([data-theme=light]) .pill{color:#e5e5e5;background:#0a0a0b;border-width:1px;border-color:#33333a}
+:root:not([data-theme=light]) .card,:root:not([data-theme=light]) .cs .card{background:#161618;border:1px solid #2c2c31;color:#ededed}
+:root:not([data-theme=light]) .tag,:root:not([data-theme=light]) .card .tag{background:#0a0a0b;border:1px solid #33333a;color:#d4d4d8}
+:root:not([data-theme=light]) .btn{border:1px solid #3a3a40;color:#fff;background:#161618;box-shadow:none}
+:root:not([data-theme=light]) .btn.p,:root:not([data-theme=light]) .c-contact .btn.p{background:#fff;color:#0a0a0b;border-color:#fff}
+:root:not([data-theme=light]) .c-contact .btn{background:#161618;color:#fff}
+:root:not([data-theme=light]) .btn:hover{transform:translateY(-1px);box-shadow:none;border-color:#fff}
+:root:not([data-theme=light]) .cs h3{border-top:1px solid #2c2c31}
+:root:not([data-theme=light]) .steps li:before{background:#fff;color:#0a0a0b}
+:root:not([data-theme=light]) .flow span{background:#161618;border:1px solid #33333a;color:#e5e5e5}
+:root:not([data-theme=light]) figure img{border:1px solid #33333a}
+:root:not([data-theme=light]) .sw span{border:1px solid #33333a}
+:root:not([data-theme=light]) .me{border-color:#33333a}
+:root:not([data-theme=light]) .codewrap{--cb:#33333a;--cbg:#0f0f11}
+:root:not([data-theme=light]) .code pre{color:#e5e5e5}
+:root:not([data-theme=light]) .code u{color:#9ecbff}
+:root:not([data-theme=light]) .code b{color:#c4a7ff}
+:root:not([data-theme=light]) #lb{background:#101012;color:#ededed;border:1px solid #3a3a40}
+:root:not([data-theme=light]) #lb .lbx{background:#101012;border-bottom:1px solid #2c2c31}
+:root:not([data-theme=light]) #lb button{background:#fff;color:#0a0a0b;border-color:#fff}
+:root:not([data-theme=light]) #lb button:hover{background:var(--ac)}
+:root:not([data-theme=light]) .skip{background:#fff;color:#0a0a0b}
+/* Light theme keeps the original colorful look; code card sits on the yellow */
+:root[data-theme=light] .code{--cb:#16181d}
+.hero>*{min-width:0}
+@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}.codewrap{min-width:0}.code pre{max-width:100%}}
+@media(max-width:760px){.code pre{white-space:pre-wrap;word-break:break-word;font-size:.72rem;padding:14px 14px 22px}.fn{margin-right:0;font-size:.62rem}.cbar{padding:12px 14px}.b1{top:-4px}}
+@media(max-width:760px){.badge{display:none}.codewrap{padding:0}}
