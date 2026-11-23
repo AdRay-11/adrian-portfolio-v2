@@ -2,7 +2,7 @@
 
 Personal portfolio of Adrian N. Raymundo, 3rd-year BS Computer Science student at Gordon College, Olongapo City. Built for a course project on responsive design and UI/UX.
 
-**Live site:** https://adrian-portfolio-v2.vercel.app
+**Live site:** https://adrian-portfolio-v2-six.vercel.app
 
 ## Sections
 

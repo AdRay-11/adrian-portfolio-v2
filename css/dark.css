@@ -68,3 +68,4 @@
 @media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}.codewrap{min-width:0}.code pre{max-width:100%}}
 @media(max-width:760px){.code pre{white-space:pre-wrap;word-break:break-word;font-size:.72rem;padding:14px 14px 22px}.fn{margin-right:0;font-size:.62rem}.cbar{padding:12px 14px}.b1{top:-4px}}
 @media(max-width:760px){.badge{display:none}.codewrap{padding:0}}
+.code pre{white-space:pre-wrap;word-break:break-word;overflow-x:visible}.code pre code{display:block;padding-left:0}
