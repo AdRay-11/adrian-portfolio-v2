@@ -42,8 +42,3 @@ function setActive(){const y=scrollY+120;let cur=secs[0].id;
  else for(const x of secs){if(natY(x)<=y)cur=x.id}
  links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+cur))}
 addEventListener('scroll',setActive,{passive:true});addEventListener('resize',setActive);setActive();
-
-(function(){const b=document.getElementById('theme');if(!b)return;const root=document.documentElement;
-function cur(){return root.getAttribute('data-theme')==='light'?'light':'dark'}
-function sync(){const l=cur()==='light';b.setAttribute('aria-label',l?'Switch to dark theme':'Switch to light theme');b.setAttribute('aria-pressed',String(l))}
-b.addEventListener('click',()=>{const n=cur()==='light'?'dark':'light';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}sync()});sync()})();
